@@ -3,29 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Gabby's Corner</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FAF9F6; 
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #F5F5F5; 
+            color: #FFCAD4; 
+            padding: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #FFCAD4; 
+        }
+
+        /* Navigation styles */
+        nav ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        /* Main content styles */
+        main {
+            padding: 20px;
+            text-align: center; 
+        }
+
+        section, aside {
+            margin-bottom: 20px;
+            text-align: center; 
+        }
+
+        .headshot-container {
+            display: flex;
+            justify-content: center; 
+            align-items: flex-start; 
+            flex-wrap: wrap; 
+            margin-bottom: 20px; 
+        }
+
+        .headshot-image-container {
+            margin-right: 20px; 
+        }
+
+        .headshot-image {
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 0 auto; 
+        }
+
+        /* CSS for the photo credits */
+        .photo-credits {
+            font-size: 12px; 
+            text-align: center; 
+            margin-top: 5px; 
+        }
+
+        /* CSS for the about Gabby section */
+        .about-gabby {
+            text-align: center; 
+        }
+
+        .about-gabby h2 {
+            text-decoration: underline; 
+            margin-bottom: 10px; 
+        }
+
+        .about-gabby p {
+            text-align: center; 
+        }
+
+        /* CSS for the Get to Know Me section */
+        aside {
+            text-align: center; 
+        }
+
+        aside h2 {
+            text-decoration: underline; 
+        }
+
+        aside ul {
+            text-align: center; 
+            list-style: none; 
+            padding: 0; 
+        }
+
+        aside ul li {
+            margin-bottom: 10px; 
+        }
+
+        /* Additional CSS */
+        .recent-moments {
+            text-align: center; 
+        }
+
+        .recent-moments h2 {
+            text-decoration: underline; 
+        }
+
+        /* more CSS stuff */
+        .info-box {
+            background-color: #FFCAD4; 
+            color: #FFFFFF; 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            text-align: center; 
+            cursor: pointer; 
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to the Home Page</h1>
-    <p>This is the home page. Click <a href="second.html">here</a> to visit the second page.</p>
+    <header>
+        <h1>Welcome to Gabby's Corner</h1>
+        <nav>
+            <div class="info-box" onclick="location.href='second.html';">Click Me For Family Info!</div>
+        </nav>
+    </header>
 
-    <!-- Example data -->
-<h2>Some Data</h2>
-<ul>
-    <li>Data 1: Lorem ipsum dolor sit amet.</li>
-    <li>Data 2: Consectetur adipiscing elit.</li>
-    <li>Data 3: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-</ul>
+    <main>
+        <!-- Headshot -->
+        <section class="headshot-container">
+            <div class="headshot-image-container">
+                <img class="headshot-image" src="Head_Shoulder_image.jpg" alt="Gabrielle Kilpatrick Headshot">
+                <p class="photo-credits">Photo credit: Angie Vodraska</p>
+            </div>
+        </section>
 
-<!-- Example photo -->
-<h2>Photo</h2>
-<img src="Head_Shoulder_image.jpg" alt="Photo description">
+        <!-- About Gabby -->
+        <section class="about-gabby">
+            <h2>About Gabby</h2>
+            <p>Welcome to Gabby's Corner! I'm Gabby, and this is my space to start my first self-made website.</p>
+            <p> I am currently a senior at the University of Iowa, studying Business Analytics. I intend to graduate this May of 2024 with honors in the degree.</p>
+            <p> My plan for post-graduation currently is to either attend the University of Iowa's School of Law or to take a gap year and retake my LSAT.</p>
+        </section>
 
-<!-- Example photo -->
-<h2>Photo</h2>
-<img src="mountain.jpg" alt="Photo description">
+        <!-- Get to Know Me -->
+        <aside>
+            <h2>Get to Know Me</h2> 
+            <ul>
+                <li><strong>Name:</strong> Gabrielle Kilpatrick</li>
+                <li><strong>Location:</strong> Iowa, USA</li>
+                <li><strong>Music:</strong> Tokyo Police Club, The Parlor Mob, Scenic Route to Alaska, and Yukon Blonde</li>
+                <li><strong>Favorite States:</strong> Arkansas, Texas, Colorado, Massachusetts, and Iowa</li>
+                <li><strong>Interests:</strong> Reading, traveling, learning new skills, and spending time with friends and family</li>
+            </ul>
+        </aside>
 
-</body>
-</html>
+        <!-- Recent Moments-->
+        <section class="recent-moments">
+            <h2>Recent Moments</h2>
+            <table class="photo-table">
+                <tr>
+                    <th>Location</th>
+                    <th>Description</th>
+                    <th>Photo</th>
+                </tr>
+                <tr>
+                    <td>Colorado 2024</td>
+                    <td>Exploring the beautiful mountains of Colorado</td>
+                    <td><img src="mountain.jpg" alt="Colorado 2024" class="photo-table"></td>
+                </tr>
+                <tr>
+                    <td>Colorado 2024</td>
+                    <td>Enjoying skiing in the snowy mountains</td>
+                    <td><img src="ski1.jpg" alt="Colorado 2024" class="photo-table"></td>
+                </tr>
+                <tr>
+                    <td>Colorado 2024</td>
+                    <td>Trying out some Ski tricks on the mountain</td>
+                    <td><img src="ski2.jpg" alt="Colorado 2024" class="photo-table"></td>
+                </tr>
+                <tr>
+                    <td>Colorado 2024</td>
+                    <td>Checking out the Dinos in Colorado</td>
+                    <td><img src="dino.jpg" alt="Colorado 2024" class="photo-table"></td>
+                </tr>
+                <tr>
+                    <td>Iowa City 2024</td>
+                    <td>Last photo taken as Alpha Delta Pi's Vice President of Finance</td>
+                    <td><img src="soror.JPG" alt="Iowa City 2024" class="photo-table"></td>
+                </tr>
+                <tr>
+                    <td>Boston 2034</td>
+                    <td>Visiting Boston's public gardens</td>
+                    <td><img src="plant.jpg" alt="Boston 2024" class="photo-table"></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Digital Product Management Assignment 6</p>
+    </footer>
 </body>
 </html>
