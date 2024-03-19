@@ -4,39 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Second Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS notes for the second page */
+        main {
+            padding: 20px;
+            text-align: center; 
+        }
+
+        section, aside {
+            margin-bottom: 20px;
+            text-align: center; 
+        }
+
+        .photo-container {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+        }
+
+        .photo-container img {
+            margin: 10px; 
+            border: 2px solid #FFCAD4; 
+            border-radius: 5px; 
+            max-width: 200px; 
+            height: auto; 
+        }
+
+        aside {
+            text-align: center; 
+            border: 2px solid #ddd; 
+            border-radius: 5px; 
+            padding: 10px; 
+            max-width: 500px; 
+            margin: 0 auto; 
+        }
+
+        aside ul {
+            list-style: none; 
+            padding: 0; 
+            margin: 0; 
+        }
+
+        aside ul li {
+            margin-bottom: 10px; 
+            text-align: left; 
+        }
+
+        /* Style for the home page link */
+        nav ul {
+            margin-top: 30px; 
+        }
+
+        nav ul li.home-page-link {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li.home-page-link a {
+            background-color: #FFCAD4; 
+            color: #FFFFFF; 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            text-decoration: none; 
+        }
+
+        nav ul li.home-page-link a:hover {
+            background-color: #FFAAB3; 
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to the Second Page</h1>
-    <p>This is my second page. Click <a href="index.html">here</a> to go back to the home page.</p>
-  
-    <!-- Example data -->
-   <h2>Some Data</h2>
-   <ul>
-       <li>Data 1: Lorem ipsum dolor sit amet.</li>
-       <li>Data 2: Consectetur adipiscing elit.</li>
-       <li>Data 3: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-   </ul>
+    <header>
+        <h1 style="margin-bottom: 40px;">More about me!</h1> 
+        <nav>
+            <ul>
+                <li class="home-page-link"><a href="index.html">Back to Home Page</a></li>
+            </ul>
+        </nav>
+    </header>
 
-   <!-- Example photo -->
-   <h2>Photo</h2>
-   <img src="sibs.jpg" alt="Photo description">
+    <main>
+        <section>
+            <h2>Family is my first priority!</h2>
+            <p>My family has been with me every step of the way through college and have been a great support throughout the years.</p>
+            <p>I come from a rather extended family, and often consider my close friends as part of my own family too.</p>
+            <p>One of my favorite things about my family is how different everyone is, as well as our mutual enjoyment of travel</p>
+        </section>
 
-    <!-- Example photo -->
-    <h2>Photo</h2>
-    <img src="mumms.jpg" alt="Photo description">
+        <aside>
+            <h2>Family Information</h2>
+            <ul>
+                <li>Siblings: I have two younger siblings, Morgan (17) and Gavin (15), they are both currently in High School.</li>
+                <li>Mom: My mom is Angie Vodraska, she currently spends most of her time either working as a NP in Oncology or going on walks with her three dogs.</li>
+                <li>Dad: My dad is David Kilpatrick, he splits his time between Texas and Iowa as he works as an attorney down south.</li>
+                <li>Quincy: Quincy is my best friend, she currently lives in Boston and we take turns visting each other when possible.</li>
+                <li>Pets: I currently have two cats, Remington and Duchess. They spend their days sun bathing and spending my money on expensive cat food.</li>
+            </ul>
+        </aside>
 
-     <!-- Example photo -->
-   <h2>Photo</h2>
-   <img src="popps.jpg" alt="Photo description">
+        <section>
+            <h2>Family Photos</h2>
+            <div class="photo-container">
+                <img src="sibs.jpg" alt="Siblings">
+                <img src="mumms.jpg" alt="Mom">
+                <img src="popps.jpg" alt="Dad">
+            </div>
+        </section>
 
-        <!-- Example photo -->
-   <h2>Photo</h2>
-   <img src="babies.jpg" alt="Photo description">
+        <section>
+            <h2>Quincy and the cats!</h2>
+            <div class="photo-container">
+                <img src="quince.jpg" alt="Best Friend">
+                <img src="babies.jpg" alt="Current Pets">
+            </div>
+        </section>
 
-        <!-- Example photo -->
-        <h2>Photo</h2>
-        <img src="quince.jpg" alt="Photo description">
+        <footer>
+            <p>&copy; Digital Product Management Assignment 6</p>
+        </footer>
+    </main>
 </body>
 </html>
-</body>
-</html>
+
